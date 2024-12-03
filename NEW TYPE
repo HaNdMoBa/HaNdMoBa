@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Dresses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Stylish Dresses Collection</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dress-collection">
+            <h2>Featured Dresses</h2>
+            <div class="dress-card">
+                <img src="dress1.jpg" alt="Dress 1" class="dress-image">
+                <div class="dress-info">
+                    <h3>Elegant Evening Gown</h3>
+                    <p>$120</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="dress-card">
+                <img src="dress2.jpg" alt="Dress 2" class="dress-image">
+                <div class="dress-info">
+                    <h3>Casual Summer Dress</h3>
+                    <p>$80</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="dress-card">
+                <img src="dress3.jpg" alt="Dress 3" class="dress-image">
+                <div class="dress-info">
+                    <h3>Chic Cocktail Dress</h3>
+                    <p>$150</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Stylish Dresses. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.dress-collection {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.dress-card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.dress-card img {
+    width: 100%;
+    height: auto;
+}
+
+.dress-info {
+    padding: 15px;
+}
+
+.dress-info h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.dress-info p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.buy-btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background-color: #ff4500;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
